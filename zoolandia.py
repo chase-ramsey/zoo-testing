@@ -5,6 +5,13 @@ class Animal:
   def __init__(self, name, species):
     self.name = name
     self.species = species
+    self.locomotion = set()
+
+  def add_locomotion(self, loco):
+    self.locomotion.add(loco)
+
+  def remove_locomotion(self, loco):
+    self.locomotion.discard(loco)
 
 class Betta(Animal):
 
